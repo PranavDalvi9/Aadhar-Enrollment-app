@@ -28,3 +28,8 @@ Project Deployed Link - [Project Deployed Link](https://adhar-enrollment-pranav-
 ## User Login Page
 Users can login-in from this page.
 <img width="922" alt="image" src="https://user-images.githubusercontent.com/96105012/173202807-ca1d8c4c-13a0-4ebb-bfed-ee68fc80e5d2.png">
+
+
+## After User Login Page
+User can see the aadhar number and the name of the user after login.
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/96105012/173202858-b7faaff9-dda0-4f33-a540-18ff44041f80.png">
