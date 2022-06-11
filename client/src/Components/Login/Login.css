@@ -34,3 +34,19 @@
     color: #C2DED1;
     border-radius: 20px;
 }
+
+
+
+.RegBtn{
+    /* margin-left: 54%; */
+    width: 28%;
+    padding: 2%;
+    border-radius: 20px;
+    border: none;
+    background-color: #354259;
+    color: #C2DED1; 
+}
+.RegBtn:hover{
+    background-color: #CDC2AE;
+    color: #354259;
+}

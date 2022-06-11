@@ -1,11 +1,12 @@
 import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import "./AddUserData.css"
-
+import {logout} from "../../Redux/LoginUser/Action"
 
 export default function AddUserData() {
-
+    const dispatch = useDispatch()
     const [first_name, setFirstName] = useState("")
     const [last_name, setLastName] = useState("")
     const [email, setEmail] = useState("")
@@ -29,7 +30,7 @@ export default function AddUserData() {
 
     return (
         <div className='AddUserDataDiv'>
-
+            <p><button className='LogoutBtn' onClick={() => dispatch(logout()) }>Logout</button></p>
             <h1>Adhar Information</h1>
             <div>
                 <input type="text" value={first_name} onChange={(e) => setFirstName(e.target.value)} placeholder='First Name' /> <br /><br />
