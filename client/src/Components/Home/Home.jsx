@@ -3,8 +3,13 @@ import "./Home.css"
 
 export default function Home() {
   return (
-    <div>
-      <p>Home</p>
+    <div className='HomeDiv'>
+      {/* <p>Home</p> */}
+      <div>
+        <p>Welcome User</p>
+        <p>Adhar Number</p>
+        <p>111111111</p>
+      </div>
     </div>
   )
 }
