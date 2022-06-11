@@ -6,7 +6,7 @@ import {logout} from "../../Redux/LoginUser/Action"
 export default function Home() {
   const dispatch = useDispatch()
   const data = useSelector((store) => store.data)
-  console.log("datata" , data.first_name, data.Adhar_Number)
+  // console.log("datata" , data.first_name, data.Adhar_Number)
   return (
     <div className='HomeDiv'>
       {/* <p>Home</p> */}

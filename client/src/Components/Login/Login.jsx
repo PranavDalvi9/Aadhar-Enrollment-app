@@ -18,7 +18,7 @@ export default function Login() {
       email,
       password
     }
-    axios.post("http://localhost:2348/adhar/login", result).then((res) => {dispatch(loginSuccess(res.data)) ;navigate("/home") }).catch((err) => {dispatch(loginFailure()) ; alert("Wrong Credential")})
+    axios.post("https://adhar-enrollment-pranav-dalvi.herokuapp.com/adhar/login", result).then((res) => {dispatch(loginSuccess(res.data)) ;navigate("/home") }).catch((err) => {dispatch(loginFailure()) ; alert("Wrong Credential")})
 // navigate("/home")
   }
 

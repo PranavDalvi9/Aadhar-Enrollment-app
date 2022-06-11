@@ -21,7 +21,7 @@ export default function AddUserData() {
             password,
             Home_Address
         }
-        axios.post("http://localhost:2348/adhar", data).then((res) => {
+        axios.post("https://adhar-enrollment-pranav-dalvi.herokuapp.com/adhar", data).then((res) => {
             alert("Details Added Successfully");
             setFirstName(""); setLastName(""); setEmail(""); setPassword(""); setHomeAddress("")
         }).catch((err) => alert("Failed to add"))

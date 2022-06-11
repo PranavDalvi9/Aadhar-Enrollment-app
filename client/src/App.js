@@ -8,7 +8,7 @@ import AddUserData from './Components/AddUserData/AddUserData';
 import { useSelector } from 'react-redux';
 
 const PrivateRoute = ({isAuthenticate, children}) => {
-  return isAuthenticate ? children : <Navigate to={"/login"}/> 
+  return isAuthenticate ? children : <Navigate to={"/"}/> 
 }
 
 const PrivateRouteAdmin = ({isAuthAdhar, children}) => {
@@ -20,10 +20,10 @@ function App() {
   const navigate = useNavigate()
   // const isAuthenticate = useSelector((store) => store.login.isAuthenticate)
   const isAuthenticate = useSelector((store) => store.isAuth)
-  console.log("isauth user" , isAuthenticate)
+  // console.log("isauth user" , isAuthenticate)
   // const isAuthenticate = false;
   const isAuthAdhar = useSelector((store) => store.isAdmin)
-  console.log("isauth admin" , isAuthAdhar)
+  // console.log("isauth admin" , isAuthAdhar)
   // const isAuthAdhar = false;
 
   return (
@@ -32,7 +32,7 @@ function App() {
 
      <Routes>
       {/* <Route path='/home' element={<Home/>}/> */}
-      <Route path='/login' element={<Login/>}/>
+      <Route path='/' element={<Login/>}/>
       <Route path='/admin' element={<AdminLogin/>} />
       {/* <Route path='/add_adhar' element={<AddUserData/>}/> */}
 
@@ -53,3 +53,17 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// email
+// "pranav@gmail.com"
+// password
+// "12345"
+
+
+// email
+// "admin@admin.com"
+// password
+// "12345"
