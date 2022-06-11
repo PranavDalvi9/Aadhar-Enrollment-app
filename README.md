@@ -46,5 +46,11 @@ Admin can see these type of interface after login-in the admin can now add the n
 ## Login Details
 ### User Details
 email : pranav@gmail.com
+
+password : 12345
+
+### Admin Details
+email : admin@admin.com
+
 password : 12345
 
