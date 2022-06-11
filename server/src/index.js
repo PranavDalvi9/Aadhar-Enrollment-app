@@ -11,7 +11,7 @@ let port = process.env.PORT || 2348;
 
 
 const adharApi = require("./controllers/AdharController")
-
+const adminapi = require("./controllers/AdminController")
 
 
 app.use(cors());
@@ -19,6 +19,7 @@ app.use(cors());
 
 
 app.use("/adhar" , adharApi);
+app.use("/admin",adminapi)
 
 
 app.listen(port, async (req, res) => {
