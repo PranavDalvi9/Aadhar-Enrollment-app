@@ -6,8 +6,8 @@ const AdharDetailsSchema = new mongoose.Schema(
     last_name: { type: String, require: true },
     email: { type: String, require: true },
     password: { type: String, require: true },
-    // Home_Address: {type: String, Math.floor(Math.random()*1E16) },
-    
+    Home_Address : { type: String, require: true },
+    Adhar_Number : {type: String, require: true, minlength: 12, maxlength: 12 }
   },
   {
     versionKey: false,
