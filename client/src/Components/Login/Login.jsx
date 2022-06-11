@@ -2,10 +2,14 @@ import React from 'react'
 import { useState } from 'react'
 import "./Login.css"
 import axios from "axios"
+import {useNavigate} from "react-router-dom"
+import { useDispatch } from 'react-redux'
+import {loginSuccess, loginFailure} from "../../Redux/LoginUser/Action"
+
 
 export default function Login() {
-
-
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
@@ -14,8 +18,8 @@ export default function Login() {
       email,
       password
     }
-    axios.post("http://localhost:2348/adhar/login", result).then((res) => console.log("resss", res.data))
-
+    axios.post("http://localhost:2348/adhar/login", result).then((res) => {dispatch(loginSuccess(res.data)) ;navigate("/home") }).catch((err) => {dispatch(loginFailure()) ; alert("Wrong Credential")})
+// navigate("/home")
   }
 
 
