@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import "./Login.css"
+// import "./Login.css"
 import axios from "axios"
 
-export default function Login() {
+export default function AdminLogin() {
 
 
   const [email, setEmail] = useState("")
@@ -14,14 +14,14 @@ export default function Login() {
       email,
       password
     }
-    axios.post("http://localhost:2348/adhar/login", result).then((res) => console.log("resss", res.data))
+    axios.post("http://localhost:2348/admin/login", result).then((res) => console.log("resss", res.data))
 
   }
 
 
   return (
     <div className='LoginDiv'>
-      <p>User Login</p>
+      <p>Admin Login</p>
       <div>
         <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email Address' /><br /><br />
         <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' /><br /><br />
