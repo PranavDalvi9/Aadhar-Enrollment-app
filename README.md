@@ -33,3 +33,8 @@ Users can login-in from this page.
 ## After User Login Page
 User can see the aadhar number and the name of the user after login.
 <img width="847" alt="image" src="https://user-images.githubusercontent.com/96105012/173202858-b7faaff9-dda0-4f33-a540-18ff44041f80.png">
+
+## Admin Login Page
+Admin can login-in from this page.
+<img width="852" alt="image" src="https://user-images.githubusercontent.com/96105012/173202914-d974630a-2389-4c36-b4a4-f94672e43efd.png">
+
