@@ -43,3 +43,8 @@ User can see the aadhar number and the name of the user after login.
 Admin can see these type of interface after login-in the admin can now add the new registration details.
 <img width="863" alt="image" src="https://user-images.githubusercontent.com/96105012/173202932-802b1ed9-fc53-4605-b93b-f6b27a23ab2d.png">
 
+## Login Details
+### User Details
+email : pranav@gmail.com
+password : 12345
+
