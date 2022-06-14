@@ -1,48 +1,49 @@
-.AddUserDataDiv{
-    /* border: 2px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-padding-top: 1%;
-    width: 40%;
-    margin: auto;
-    padding-bottom: 2%;
-    margin-top: 6%;
-
+.AddUserDataDiv {
+  /* border: 2px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding-top: 1%;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 2%;
+  margin-top: 6%;
 }
 
-.AddUserDataDiv>div>input{
-    /* border: 2px solid blue; */
-    width: 70%;
-    padding: 2%;
-    border-radius: 30px;
-    border: none;
-    background-color: #C2DED1;
-    color: #354259;
+.AddUserDataDiv > div > input {
+  /* border: 2px solid blue; */
+  width: 70%;
+  padding: 2%;
+  border-radius: 30px;
+  border: none;
+  background-color: #c2ded1;
+  color: #354259;
 }
 
-.AddUserDataDiv>div>button{
-    width: 28%;
-    padding: 2%;
-    border-radius: 20px;
-    border: none;
-    background-color: #CDC2AE;
-    color: #354259;
+.AddUserDataDiv > div > button {
+  width: 28%;
+  padding: 2%;
+  border-radius: 20px;
+  border: none;
+  background-color: #cdc2ae;
+  color: #354259;
 }
 
-.AddUserDataDiv>div>button:hover{
-    background-color: #354259;
-    color: #C2DED1; 
+.AddUserDataDiv > div > button:hover {
+  background-color: #354259;
+  color: #c2ded1;
 }
 
-.LogoutBtn{
-    margin-left: 54%;
-    width: 18%;
-    padding: 2%;
-    border-radius: 20px;
-    border: none;
-    background-color: #354259;
-    color: #C2DED1; 
+.LogoutBtn {
+  margin-left: 54%;
+  width: 18%;
+  padding: 2%;
+  border-radius: 20px;
+  border: none;
+  background-color: #354259;
+  color: #c2ded1;
 }
-.LogoutBtn:hover{
-    background-color: #CDC2AE;
-    color: #354259;
+.LogoutBtn:hover {
+  background-color: #cdc2ae;
+  color: #354259;
 }

@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import "./Login.css"
 import axios from "axios"
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { useDispatch } from 'react-redux'
-import {loginSuccess, loginFailure} from "../../Redux/LoginUser/Action"
+import { loginSuccess, loginFailure } from "../../Redux/LoginUser/Action"
 
 
 export default function Login() {
@@ -18,8 +18,8 @@ export default function Login() {
       email,
       password
     }
-    axios.post("https://adhar-enrollment-pranav-dalvi.herokuapp.com/adhar/login", result).then((res) => {dispatch(loginSuccess(res.data)) ;navigate("/home") }).catch((err) => {dispatch(loginFailure()) ; alert("Wrong Credential")})
-// navigate("/home")
+    axios.post("https://adhar-enrollment-pranav-dalvi.herokuapp.com/adhar/login", result).then((res) => { dispatch(loginSuccess(res.data)); navigate("/home") }).catch((err) => { dispatch(loginFailure()); alert("Wrong Credential") })
+    // navigate("/home")
   }
 
 
@@ -28,9 +28,9 @@ export default function Login() {
       <p>User Login</p>
       <div>
         <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email Address' /><br /><br />
-        <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' /><br /><br />
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' /><br /><br />
         <button onClick={() => handleAdd()}>Login</button>
-        <p><button className='RegBtn' onClick={() => navigate("/admin") }>Admin Login</button></p>
+        <p><button className='RegBtn' onClick={() => navigate("/admin")}>Admin Login</button></p>
 
       </div>
     </div>

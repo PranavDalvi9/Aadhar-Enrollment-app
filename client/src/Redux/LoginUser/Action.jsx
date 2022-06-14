@@ -9,23 +9,23 @@ export const ADMIN_SUCCESS = "ADMIN_SUCCESS"
 export const ADMIN_FAIL = "ADMIN_FAIL"
 
 export const loginSuccess = (payload) => ({
-    type : LOGIN_SUCCESS,
+    type: LOGIN_SUCCESS,
     payload
 })
 
 export const loginFailure = () => ({
-    type : LOGIN_FAILURE
+    type: LOGIN_FAILURE
 })
 
 export const logout = () => ({
-    type : LOGOUT
+    type: LOGOUT
 })
 
 export const adminSuccess = (payload) => ({
-    type : ADMIN_SUCCESS,
+    type: ADMIN_SUCCESS,
     payload
 })
 
 export const adminFail = () => ({
-    type : ADMIN_FAIL
+    type: ADMIN_FAIL
 })
